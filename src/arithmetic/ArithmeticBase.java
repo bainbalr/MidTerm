@@ -14,26 +14,29 @@ import java.util.Scanner;
  * date 06/20
  */
 public class ArithmeticBase 
+
 {
  public double x,y;
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
-        System.out.println("enter String");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
+        System.out.println("enter any character from +,-,*,/");
+        char s= sc.next().charAt(0);
+        switch (s) 
         {
-            case "PLUS":
+            case '+':
                 return x + y;
-            case "MINUS":
+            case '-':
                 return x - y;
-            case "TIMES":
+            case '*':
                 return x * y;
-            case "DIVIDE":
+            case '/':
+
+
                 return x / y;
             default:
                 throw new AssertionError("Unknown operations " + this);
         }
     }
-   
 }
+
