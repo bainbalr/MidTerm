@@ -5,9 +5,6 @@
  */
 package arithmetic;
 
-
-import java.util.Scanner;
-
 /** This class calls the method to perform 
  * arithmetic operations based on user input
  * execute the code check the output
